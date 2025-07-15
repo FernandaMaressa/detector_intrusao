@@ -4,6 +4,7 @@ Este projeto implementa um sistema inteligente para detecção de intrusos em te
 O objetivo é monitorar ambientes como casas, escritórios ou indústrias e detectar automaticamente a presença de pessoas, disparando um alarme sonoro fora do horário configurado.
 
 --- Tecnologias e bibliotecas utilizadas ---
+
 🐍 Python — linguagem base do projeto
 📷 OpenCV — para captura e processamento de vídeo
 🤖 YOLOv8 (Ultralytics) — modelo pré-treinado para detecção de objetos em tempo real
@@ -11,7 +12,9 @@ O objetivo é monitorar ambientes como casas, escritórios ou indústrias e dete
 🕒 Datetime & Time — para controlar o horário e frequência de detecção
 
 --- Como executar o projeto ---
+
 -> Clone o repositório
+
 git clone https://github.com/SeuUsuario/detector_intrusao.git
 cd detector_intrusao
 
@@ -24,12 +27,15 @@ venv\Scripts\activate
 source venv/bin/activate
 
 -> Instale as dependências
+
 pip install -r requirements.txt
 
 -> Execute o sistema
+
 python src/detector.py
 
 --- Como funciona ---
+
 O script acessa a webcam do seu computador.
 A cada 4 segundos, realiza uma varredura com o modelo YOLOv8 para identificar todos os objetos no ambiente.
 Desenha caixas (bounding boxes) ao redor de todos os objetos detectados, não apenas pessoas.
@@ -38,6 +44,7 @@ Fora do horário configurado (por padrão, das 23h às 6h), se detectar pessoas,
 Isso torna o sistema útil para: Segurança residencial, evitando movimentação fora de horários permitidos, monitoramento de escritórios após expediente, áreas industriais com acesso restrito em determinados turnos.
 
 --- Como configurar o horário do alarme ---
+
 No arquivo `src/detector.py` você encontrará:
 
     if pessoas and (hora_atual >= 23 or hora_atual < 6):
