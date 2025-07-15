@@ -3,6 +3,7 @@ Detector de Intrusão com Visão Computacional 🚨
 Este projeto implementa um sistema inteligente para detecção de intrusos em tempo real usando Visão Computacional e Inteligência Artificial.
 O objetivo é monitorar ambientes como casas, escritórios ou indústrias e detectar automaticamente a presença de pessoas, disparando um alarme sonoro fora do horário configurado.
 
+
 --- Tecnologias e bibliotecas utilizadas ---
 
 🐍 Python — linguagem base do projeto
@@ -14,6 +15,7 @@ O objetivo é monitorar ambientes como casas, escritórios ou indústrias e dete
 🎮 Pygame — para exibir o vídeo em tempo real e tocar o som do alarme
 
 🕒 Datetime & Time — para controlar o horário e frequência de detecção
+
 
 
 --- Como executar o projeto ---
@@ -39,6 +41,7 @@ pip install -r requirements.txt
 
 python src/detector.py
 
+
 --- Como funciona ---
 
 O script acessa a webcam do seu computador.
@@ -47,6 +50,7 @@ Desenha caixas (bounding boxes) ao redor de todos os objetos detectados, não ap
 Exibe o horário atual sobre o vídeo.
 Fora do horário configurado (por padrão, das 23h às 6h), se detectar pessoas, dispara um alarme sonoro usando o Pygame.
 Isso torna o sistema útil para: Segurança residencial, evitando movimentação fora de horários permitidos, monitoramento de escritórios após expediente, áreas industriais com acesso restrito em determinados turnos.
+
 
 --- Como configurar o horário do alarme ---
 
