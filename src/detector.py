@@ -76,7 +76,7 @@ def main():
             pessoas_detectadas, frame_anotado = detecta_intrusos(model, frame)
 
             if pessoas_detectadas and esta_horario_alerta(hora_atual):
-                logging.info("🚨 INTRUSO DETECTADO - ALARME DISPARADO 🚨")
+                logging.info("🚨🚨 INTRUSO DETECTADO - ALARME DISPARADO 🚨🚨")
                 pygame.mixer.Sound.play(alarme)
 
             mostrar_deteccao_ate = tempo_atual + DURACAO_EXIBICAO
