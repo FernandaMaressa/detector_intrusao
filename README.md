@@ -16,6 +16,7 @@ git clone https://github.com/SeuUsuario/detector_intrusao.git
 cd detector_intrusao
 
 -> Crie e ative um ambiente virtual
+
 python -m venv venv
 # Windows
 venv\Scripts\activate
