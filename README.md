@@ -6,10 +6,15 @@ O objetivo é monitorar ambientes como casas, escritórios ou indústrias e dete
 --- Tecnologias e bibliotecas utilizadas ---
 
 🐍 Python — linguagem base do projeto
+
 📷 OpenCV — para captura e processamento de vídeo
+
 🤖 YOLOv8 (Ultralytics) — modelo pré-treinado para detecção de objetos em tempo real
+
 🎮 Pygame — para exibir o vídeo em tempo real e tocar o som do alarme
+
 🕒 Datetime & Time — para controlar o horário e frequência de detecção
+
 
 --- Como executar o projeto ---
 
@@ -52,9 +57,13 @@ No arquivo `src/detector.py` você encontrará:
 Basta alterar para o horário que você deseja.
 
 🎯 Diferenciais do projeto
+
 ✅ Detecção com YOLOv8, um dos modelos mais rápidos e eficientes do mercado
+
 ✅ Exibe caixas ao redor de todos os objetos detectados, não apenas pessoas
+
 ✅ Alarme sonoro configurado para tocar fora do horário permitido
+
 ✅ Código comentado e organizado, fácil de adaptar para:
 --CFTV com câmeras IP
 --Monitoramento multi-câmeras
